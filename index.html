@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <a href="#main-content" id="skip">Skip To Main Content Section</a>
+        <a href="#main-content" id="skiplink">Skip To Main Content Section</a>
         
         <header>
             <h1>Wunderlust Travel</h1>
@@ -165,7 +165,7 @@
                         <source media="(min-width: 1024px)" srcset="images/max-winter-L.png" >
                         <source media="(min-width: 780px)" srcset="images/max-winter-M.png" >
                         <source media="(min-width: 320px)" srcset="images/max-winter-S.png" >
-                        <img src="images/miranda-blake-L.png" alt="Max Winter" >
+                        <img src="images/max-winter-S.png" alt="Max Winter" >
                     </picture>
 
                     <p>Traveling From: Berlin, Germany</p>
@@ -303,33 +303,34 @@
                         <input type="tel" id="tel" name="tel" placeholder="Enter telephone number">
                     </fieldset>
 
-                    <label for="destination">Destination</label>
-				    <select id="destination" name="destination">
-					    <option value="barcelona">Barcelona</option>
-					    <option value="granada">Granada</option>
-                        <option value="ibiza">Ibiza</option>
-					    <option value="madrid">Madrid</option>
-                        <option value="majorca">Majorca</option>
-					    <option value="seville">Seville</option>
-                        <option value="tenerife">Tenerife</option>
-					    <option value="valencia">Valencia</option>
-                    </select>
+                    <fieldset>
+                        <label for="destination">Destination</label>
+                        <select id="destination" name="destination">
+                            <option value="barcelona">Barcelona</option>
+                            <option value="granada">Granada</option>
+                            <option value="ibiza">Ibiza</option>
+                            <option value="madrid">Madrid</option>
+                            <option value="majorca">Majorca</option>
+                            <option value="seville">Seville</option>
+                            <option value="tenerife">Tenerife</option>
+                            <option value="valencia">Valencia</option>
+                        </select>
 
-                    <label for="time">Travel Time</label>
-				    <select id="time" name="time">
-					    <option value="fall">Fall</option>
-					    <option value="winter">Winter</option>
-                        <option value="spring">Spring</option>
-					    <option value="summer">Summer</option>
-                        <option value="flexible">Flexible</option>
-                    </select>
-                                                            
+                        <label for="time">Travel Time</label>
+                        <select id="time" name="time">
+                            <option value="fall">Fall</option>
+                            <option value="winter">Winter</option>
+                            <option value="spring">Spring</option>
+                            <option value="summer">Summer</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </fieldset>
+                                                          
                     <input type="submit" value="Submit">
                 </form>
             </section>
         </main>
 
-        <!-- extra comment for testing -->
         <footer>
             <p>&copy; Copyright 2021 Wunderlust</p>
             <p>Privacy Statement</p>
