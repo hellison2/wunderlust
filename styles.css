@@ -77,6 +77,26 @@ h4, p, q, small, nav, button, form {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p, q, small, nav, button, form {
+    font-size: 16px;
+}
+
 
 /* SKIPLINK */
 #skip{
@@ -130,21 +150,45 @@ header p {
 
 /* MAJORCA SECTION */
 #intro {
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
 }
 
 #intro h2, #intro p {
-    width: 85%;
+  width: 85%;
+  margin: auto;
 }
 
 
 /* PLAN YOUR TRIP */
 #plan {
-    background-color: var(--yellow);
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+#plan div {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: auto;
 }
 
 #plan section {
-    background-color: var(--blue);
+  background-color: var(--teal);
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 250px; 
+  height: 250px; 
+  margin: auto; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
