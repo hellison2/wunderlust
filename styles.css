@@ -59,22 +59,22 @@ table {
 @import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
 
 :root{
-    --yellow: #F6D64A;
-    --teal: #55BCD5;
-    --purple: #9B26B0;
-    --blue: #499BD2;
-    --dark-gray: #222222;
-    --light-gray: #EAEAEA;
-    --white: #FFFFFF;
-    --black: #000000;
+  --yellow: #F6D64A;
+  --teal: #55BCD5;
+  --purple: #9B26B0;
+  --blue: #499BD2;
+  --dark-gray: #222222;
+  --light-gray: #EAEAEA;
+  --white: #FFFFFF;
+  --black: #000000;
 }
 
 h1, h2, h3 {
-    font-family: 'Molle', cursive;
+  font-family: 'Molle', cursive;
 }
 
 h4, p, q, small, nav, button, form {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -94,53 +94,53 @@ h4 {
 }
 
 p, q, small, nav, button, form {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 
 /* SKIPLINK */
 #skip{
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
    
 #skip:focus{
-    position: static;
-    width: auto;
-    height: auto;
+  position: static;
+  width: auto;
+  height: auto;
 }
 
 
 /* HEADER & NAV */
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 header img {
-    grid-column-start: 1;
-    grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 
 nav {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    justify-content: center;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  justify-content: center;
 }
 
 header h1 {
-    grid-row-start: 2;
-    grid-column-start: 1 span;
+  grid-row-start: 2;
+  grid-column-start: 1 span;
 }
 
 header p {
-    grid-row-start: 3;
-    grid-column-start: 1 span;
+  grid-row-start: 3;
+  grid-column-start: 1 span;
 } 
 
 
@@ -161,14 +161,13 @@ header p {
 }
 
 #img-grid {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
 }
 
 #img-grid img {
-    grid-column: span 2;
+  width: 100%;
 }
 
 
@@ -182,7 +181,7 @@ header p {
 }
 
 #plan h3 {
-    padding: 10px;
+  padding: 10px;
 }
 
 #plan div {
@@ -208,24 +207,39 @@ header p {
 }
 
 #plan h4 {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 #plan img {
-    width: 175px;
-    height: 175px;
+  width: 175px;
+  height: 175px;
 }
 
 
-/* Testimonials */
+/* TESTIMONIALS */
+#testimonials {
+  width: 250px;
+}
+
+#testimonials div {
+  display: flex;
+  flex-direction: column;
+}
+
+#testimonials section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
 
 
 /* DESTINATION */
 #about div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
 }
 
 
