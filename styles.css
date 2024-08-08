@@ -130,6 +130,35 @@ header p {
 
 /* MAJORCA SECTION */
 #intro {
-    display: flex;
     padding: 10px;
 }
+
+#intro h2, #intro p {
+    width: 85%;
+}
+
+
+/* PLAN YOUR TRIP */
+#plan {
+    background-color: var(--yellow);
+}
+
+#plan section {
+    background-color: var(--blue);
+}
+
+
+/* Testimonials */
+
+
+/* DESTINATION */
+#about div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+
+/* CONTACT */
+
