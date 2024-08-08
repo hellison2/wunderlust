@@ -163,7 +163,12 @@ header p {
 #img-grid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
+}
+
+#img-grid img {
+    grid-column: 1 / 2;
 }
 
 
@@ -200,6 +205,10 @@ header p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#plan h4 {
+    padding-bottom: 10px;
 }
 
 #plan img {
