@@ -95,7 +95,7 @@ h4, p, q, small, nav, button, form {
 }
 
 
-/* HEADER & NAV */
+/* HEADER & NAV 
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -118,6 +118,46 @@ header h1 {
 header p {
     grid-row-start: 3;
     grid-column-start: 1 span;
+} */
+
+header {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 10px; /* Optional: Add padding around the header */
+}
+
+/* Flexbox layout for the header children */
+header > * {
+    width: 100%; /* Make children take full width */
+}
+
+/* Container for the logo and nav menu to be side by side */
+header > div {
+    display: flex;
+    justify-content: space-between; /* Space out logo and nav menu */
+    align-items: center; /* Vertically center items */
+    width: 100%;
+}
+
+/* Ensure the logo and nav are side by side */
+#logo {
+    margin-right: auto; /* Push the logo to the left */
+}
+
+nav {
+    margin-left: auto; /* Push the nav menu to the right */
+}
+
+/* Ensure the h1 and p are stacked below the flex container */
+header > h1 {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the text horizontally */
+}
+
+header > p {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the text horizontally */
 }
 
 
