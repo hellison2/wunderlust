@@ -110,6 +110,7 @@ header img {
 nav {
     grid-column-start: 2;
     grid-row-start: 1;
+    justify-content: center;
 }
 
 header h1 {
@@ -125,3 +126,10 @@ header p {
 
 /* SCREEN READER ONLY */
 
+
+
+/* MAJORCA SECTION */
+#intro {
+    display: flex;
+    padding: 10px;
+}
