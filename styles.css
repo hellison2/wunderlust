@@ -162,7 +162,7 @@ header p {
 
 #img-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
 }
 
@@ -176,11 +176,16 @@ header p {
   padding-top: 20px;
 }
 
+#plan h3 {
+    padding: 10px;
+}
+
 #plan div {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1rem;
   margin: auto;
+  padding: 20px;
 }
 
 #plan section {
@@ -195,6 +200,11 @@ header p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#plan img {
+    width: 175px;
+    height: 175px;
 }
 
 
