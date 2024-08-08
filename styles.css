@@ -168,7 +168,7 @@ header p {
 }
 
 #img-grid img {
-    grid-column: 1 / 2;
+    grid-column: span 2;
 }
 
 
