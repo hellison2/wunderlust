@@ -160,6 +160,12 @@ header p {
   margin: auto;
 }
 
+#img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
 
 /* PLAN YOUR TRIP */
 #plan {
