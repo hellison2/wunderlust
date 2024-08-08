@@ -97,15 +97,24 @@ h4, p, q, small, nav, button, form {
 
 /* HEADER & NAV */
 header {
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+header img {
+    grid-column-start: 1;
 }
 
 nav {
-    position: relative;
-    z-index: 10;
+    grid-column-start: 2;
 }
 
 #menu-toggle {
     position: relative;
     z-index: 20; 
 }
+
+
+/* SCREEN READER ONLY */
+
