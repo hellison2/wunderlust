@@ -286,7 +286,7 @@ header p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  justify-content: center;
+  align-items: center;
   gap: 1rem;
   width: 75%;
 }
@@ -294,7 +294,7 @@ header p {
 #about section {
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding-top: 20px;
   align-items: center;
 }
 
@@ -342,13 +342,6 @@ input, label, fieldset{
 }
 
 /*
-.required{
-  display: inline-block;
-  color: #DE0B63;
-  font-size: 1.1em;
-  font-weight: bold;
-}
-
 label{
 	padding-left: 0.5em;
 	margin: 0.75em 0 0.25em 0;
