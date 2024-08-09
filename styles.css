@@ -93,9 +93,12 @@ h4 {
   font-size: 20px;
 }
 
+p {
+  line-height: 2;
+}
+
 p, q, small, nav, button, form {
   font-size: 16px;
-  line-height: 2;
 }
 
 
@@ -142,7 +145,6 @@ header h1 {
 header p {
   grid-column-start: 1 span;
   grid-row-start: 2;
-  align-self: flex-end;
 } 
 
 
