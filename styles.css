@@ -378,7 +378,7 @@ label{
 input{
 	font-size: 1em;
 	padding: 0.25em 0.5em;
-	border: 1px solid #222;
+	border: 1px solid var(--purple);
 	height: 1.5em;
 }
 
@@ -391,13 +391,11 @@ fieldset{
 
 input[type=submit]{
 	padding: 0.75em;
-	width: 35%;
+	width: 15%;
 	height: auto;
-	margin-left: 67%;
 	color: #fff;
-	background-color: #222;
+	background-color: var(--purple);
 	border: none;
-	font-family: serif;
 }
 
 textarea{
