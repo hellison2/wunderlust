@@ -276,6 +276,7 @@ header p {
 
 
 /* DESTINATION */
+/*
 #about {
   padding: 20px;
   background-color: var(--blue);
@@ -296,6 +297,34 @@ header p {
   flex-direction: column;
   padding-top: 20px;
   align-items: center;
+} */
+
+#about {
+  padding: 20px;
+  background-color: var(--blue);
+  width: 85%;
+  text-align: center; /* Centers all text by default */
+}
+
+#about h3 {
+  text-align: left; /* Overrides centering for the h3 */
+}
+
+#about div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  width: 75%;
+  margin: auto; /* Centers the grid itself */
+}
+
+#about section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
 }
 
 
