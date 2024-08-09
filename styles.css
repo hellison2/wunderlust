@@ -128,28 +128,22 @@ header {
   background: #f4f4f4; /* Light background for the header */
 }
 
-#logo img {
-  height: 50px; /* Adjust logo size as needed */
-}
-
-h1 {
-  margin: 10px 0;
-  font-size: 24px;
-}
-
-p {
-  margin: 5px 0;
-  font-size: 16px;
-  color: #666; /* Gray color for the text */
-}
-
-nav {
-  width: 100%;
-  text-align: center;
-}
-
+/* Style for the top bar */
 #menu-toggle {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Optional: to control maximum width of the header */
+  align-items: center;
+  margin-bottom: 10px; /* Space between top bar and text */
+}
+
+#logo {
+  margin-right: auto; /* Pushes the logo to the left */
+}
+
+#menu-toggle > div {
+  margin-left: auto; /* Pushes the menu button to the right */
 }
 
 #toggle {
