@@ -158,24 +158,24 @@ label {
   text-transform: uppercase;
 }
 
-#header ul {
+ul {
   display: none; 
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#header ul li {
+ul li {
   margin: 0;
 }
 
-#header ul li a {
+ul li a {
   display: block;
   padding: 10px;
   text-decoration: none;
 }
 
-#header ul li a:hover {
+ul li a:hover {
   background-color: var(--dark-gray);
 }
 
