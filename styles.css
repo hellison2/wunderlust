@@ -120,7 +120,7 @@ p, q, small, nav, button, form {
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 header img {
@@ -135,18 +135,24 @@ nav {
 }
 
 header h1 {
-  grid-row-start: 2;
   grid-column-start: 1 span;
+  grid-row-start: 2;
 }
 
 header p {
-  grid-row-start: 3;
   grid-column-start: 1 span;
+  grid-row-start: 2;
+  align-self: flex-end;
 } 
 
 
 /* SCREEN READER ONLY */
-
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  overflow: hidden;
+}
 
 
 /* MAJORCA SECTION */
@@ -226,19 +232,22 @@ header p {
 
 /* TESTIMONIALS */
 #testimonials {
-  width: 250px;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  align-items: center;
+  padding: 20px;
 }
 
 #testimonials div {
-  display: flex;
-  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 #testimonials section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
 }
 
 
