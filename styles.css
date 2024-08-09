@@ -252,6 +252,7 @@ header p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
 }
 
 #testimonials q {
@@ -260,13 +261,36 @@ header p {
 
 
 /* DESTINATION */
+#about {
+  padding: 20px;
+}
+
 #about div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
+  width: 85%;
 }
 
 
 /* CONTACT */
+.required {
+  color: var(--purple);
+}
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#names input {
+  border: 2px var(--purple);
+  padding: 20px;
+}
