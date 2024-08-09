@@ -128,13 +128,12 @@ header {
 }
 
 #menu-toggle {
-  display: flex;
-  justify-content: space-between;
   position: relative;
   right: 10px;
+  top: 10px;
   width: 100%;
   align-items: right;
-  margin-bottom: 10px; /* Space between top bar and text */
+  margin-bottom: 10px; 
 }
 
 #logo {
@@ -149,7 +148,7 @@ header {
   display: none; 
 }
 
-label {
+#header label {
   display: inline-block;
   padding: 10px;
   background-color: var(--yellow);
@@ -157,62 +156,30 @@ label {
   text-transform: uppercase;
 }
 
-ul {
+#header ul {
   display: none; 
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-ul li {
+#header ul li {
   margin: 0;
 }
 
-ul li a {
+#header ul li a {
   display: block;
   padding: 10px;
   text-decoration: none;
 }
 
-ul li a:hover {
+#header ul li a:hover {
   background-color: var(--dark-gray);
 }
 
 #toggle:checked + label + ul {
   display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* SCREEN READER ONLY */
@@ -330,10 +297,6 @@ ul li a:hover {
   background-color: var(--blue);
   text-align: center; 
   margin: auto;
-}
-
-#about h3 {
-  text-align: left; 
 }
 
 #about div {
