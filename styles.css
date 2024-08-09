@@ -130,9 +130,10 @@ header {
 #menu-toggle {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  right: 10px;
   width: 100%;
-  max-width: 1200px; /* Optional: to control maximum width of the header */
-  align-items: center;
+  align-items: right;
   margin-bottom: 10px; /* Space between top bar and text */
 }
 
