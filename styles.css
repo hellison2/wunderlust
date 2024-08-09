@@ -240,7 +240,7 @@ header p {
 }
 
 #testimonials h3 {
-  align-items: left;
+  text-align: left;
 }
 
 #testimonials div {
@@ -255,8 +255,7 @@ header p {
 }
 
 #testimonials q {
-  display: flex;
-  align-items: center;
+  text-align: center;
 }
 
 
