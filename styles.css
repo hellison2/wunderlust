@@ -409,8 +409,12 @@ input[type=radio] {
   left: 0;
 }
 
+.radio-input:hover .radio-control {
+  border-color: var(--black); 
+}
+
 input[type=radio]:checked + .radio-control {
-  border-color: var(--purple); /* Purple border when checked */
+  background: var(--purple); 
 }
 
 select {
