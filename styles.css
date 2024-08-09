@@ -125,10 +125,8 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  background: #f4f4f4; /* Light background for the header */
 }
 
-/* Style for the top bar */
 #menu-toggle {
   display: flex;
   justify-content: space-between;
@@ -139,33 +137,30 @@ header {
 }
 
 #logo {
-  margin-right: auto; /* Pushes the logo to the left */
+  margin-right: auto; 
 }
 
 #menu-toggle > div {
-  margin-left: auto; /* Pushes the menu button to the right */
+  margin-left: auto; 
 }
 
 #toggle {
-  display: none; /* Hide the checkbox */
+  display: none; 
 }
 
 label {
   display: inline-block;
   padding: 10px;
-  background: #333; /* Dark background for the menu button */
-  color: #fff;
+  background-color: var(--yellow);
   cursor: pointer;
-  font-size: 18px;
   text-transform: uppercase;
 }
 
 ul {
-  display: none; /* Hide menu by default */
+  display: none; 
   list-style: none;
   padding: 0;
   margin: 0;
-  background: #333; /* Dark background for the menu */
 }
 
 ul li {
@@ -175,16 +170,15 @@ ul li {
 ul li a {
   display: block;
   padding: 10px;
-  color: #fff;
   text-decoration: none;
 }
 
 ul li a:hover {
-  background: #444; /* Darker background on hover */
+  background-color: var(--dark-gray);
 }
 
 #toggle:checked + label + ul {
-  display: block; /* Show menu when checkbox is checked */
+  display: block;
 }
 
 
