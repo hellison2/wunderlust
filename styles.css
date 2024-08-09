@@ -182,23 +182,6 @@ header p {
   height: auto;
 }
 
-/* #img-grid {
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-}
-
-#img-grid img, #img-grid picture {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-#img-grid picture {
-  width: 100%;
-  height: auto;
-  display: block;
-} */
-
 
 /* PLAN YOUR TRIP */
 #plan {
@@ -252,6 +235,7 @@ header p {
   width: 85%;
   align-items: center;
   padding: 20px;
+  margin: auto;
 }
 
 #testimonials h3 {
@@ -276,38 +260,15 @@ header p {
 
 
 /* DESTINATION */
-/*
 #about {
   padding: 20px;
   background-color: var(--blue);
-  width: 85%;
-}
-
-#about div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  gap: 1rem;
-  width: 75%;
-}
-
-#about section {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  align-items: center;
-} */
-
-#about {
-  padding: 20px;
-  background-color: var(--blue);
-  width: 85%;
-  text-align: center; /* Centers all text by default */
+  text-align: center; 
+  margin: auto;
 }
 
 #about h3 {
-  text-align: left; /* Overrides centering for the h3 */
+  text-align: left; 
 }
 
 #about div {
@@ -317,7 +278,7 @@ header p {
   align-items: center;
   gap: 1rem;
   width: 75%;
-  margin: auto; /* Centers the grid itself */
+  margin: auto; 
 }
 
 #about section {
@@ -387,7 +348,7 @@ input[type=text], input[type=email], input[type=tel] {
 }
 
 input[type=radio] {
-  display: none; /* Hide default radio button */
+  display: none; 
 }
 
 .radio-input {
@@ -402,7 +363,7 @@ input[type=radio] {
 .radio-control {
   position: absolute;
   border-radius: 50%;
-  border: 2px solid var(--purple); /* Purple border */
+  border: 2px solid var(--purple); 
   width: 100%;
   height: 100%;
   top: 0;
@@ -427,7 +388,7 @@ input[type=submit] {
   padding: 10px;
   width: 100%;
   height: auto;
-  color: #fff;
+  color: white;
   background-color: var(--purple);
   border: none;
   cursor: pointer;
