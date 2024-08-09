@@ -384,10 +384,6 @@ input[type=text], input[type=email], input[type=tel] {
   height: 1.5em;
 }
 
-input[type=radio] {
-  display: none; /* Hide default radio button */
-}
-
 .radio-input {
   position: relative;
   display: inline-block;
@@ -400,8 +396,8 @@ input[type=radio] {
   position: absolute;
   border-radius: 50%;
   border: 2px solid var(--purple); /* Purple border */
-  width: 20px;
-  height: auto;
+  width: 50px;
+  height: 50px;
   top: 0;
   left: 0;
 }
@@ -410,15 +406,10 @@ input[type=radio]:checked + .radio-control {
   border-color: var(--purple); /* Purple border when checked */
 }
 
-.radio-label {
-  font-size: 16px; /* Adjust font size as needed */
-}
-
 select {
   padding: 10px;
   border: 2px solid var(--purple);
   border-radius: 4px;
-  appearance: none; /* Remove default styling */
 }
 
 input[type=submit] {
@@ -430,10 +421,6 @@ input[type=submit] {
   border: none;
   cursor: pointer;
   margin-top: 20px;
-}
-
-input[type=submit]:hover {
-  background-color: darken(var(--purple), 10%); /* Slightly darker on hover */
 }
 
 
