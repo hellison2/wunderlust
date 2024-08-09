@@ -371,7 +371,6 @@ input, label, fieldset{
 }
 
 label{
-	padding-left: 10px;
 	margin: 0.75em 0 0.25em 0;
 }
 
@@ -383,7 +382,7 @@ input{
 
 fieldset{
 	padding: 10px;
-	margin: 0.75em 0 0.25em 0;
+	margin: 10px 0 10px 0;
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
 }
