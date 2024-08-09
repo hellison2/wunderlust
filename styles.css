@@ -370,7 +370,6 @@ input, label, fieldset{
 	display: block;
 }
 
-/*
 label{
 	padding-left: 0.5em;
 	margin: 0.75em 0 0.25em 0;
@@ -417,4 +416,4 @@ input:focus, textarea:focus{
 
 input:error, textarea:error{
 	border-color: #DE0B63;
-} */
+} 
