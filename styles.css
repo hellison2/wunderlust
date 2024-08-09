@@ -452,16 +452,17 @@ input[type=radio] {
 .radio-control {
   position: absolute;
   border-radius: 50%;
-  background: var(--purple);
+  border: 2px solid var(--purple); /* Purple border */
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  transition: background 0.3s;
+  background: var(--white); /* No fill */
+  transition: border-color 0.3s;
 }
 
 input[type=radio]:checked + .radio-control {
-  background: var(--purple);
+  border-color: var(--purple); /* Purple border when checked */
 }
 
 .radio-label {
@@ -478,29 +479,15 @@ select {
   padding: 10px;
   border: 2px solid var(--purple);
   border-radius: 4px;
-  background: var(--white);
-  color: var(--black);
+  background: var(--purple); /* Purple background */
+  color: var(--white); /* White text */
   appearance: none; /* Remove default styling */
+  font-size: 16px;
 }
 
-.custom-select {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-
-.custom-select select {
-  width: 100%;
-}
-
-.custom-select .focus {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid var(--purple);
-  border-radius: 4px;
+select option {
+  background: var(--white); /* White background for options */
+  color: var(--black); /* Black text for options */
 }
 
 input[type=submit] {
