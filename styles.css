@@ -135,6 +135,7 @@ nav {
   grid-column-start: 2;
   grid-row-start: 1;
   justify-content: center;
+  position: relative;
 }
 
 header h1 {
@@ -148,6 +149,84 @@ header p {
   padding-top: 20px;
   align-items: flex-start;
 } 
+
+
+
+
+
+
+
+
+#menu-toggle {
+  display: none; /* Hide the checkbox */
+}
+
+.menu-icon {
+  display: inline-block;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.nav-menu {
+  display: none; /* Hide menu by default */
+  list-style: none;
+  background: #333;
+  padding: 10px;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  background: #444;
+}
+
+#menu-toggle:checked + .menu-icon + .nav-menu {
+  display: block; /* Show menu when checkbox is checked */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* SCREEN READER ONLY */
