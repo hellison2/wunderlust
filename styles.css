@@ -95,7 +95,7 @@ h4 {
 
 p, q, small, nav, button, form {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 
@@ -165,6 +165,11 @@ header p {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
+}
+
+#img-grid img, #img-grid picture {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #img-grid picture {
