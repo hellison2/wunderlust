@@ -128,9 +128,8 @@ header {
 }
 
 #menu-toggle {
-  position: relative;
-  right: 10px;
-  top: 10px;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   align-items: right;
   margin-bottom: 10px; 
