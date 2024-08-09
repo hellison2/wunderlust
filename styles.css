@@ -174,7 +174,7 @@ header p {
 #img-grid {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  padding: 15px;
+  padding: 10px;
 }
 
 #img-grid img, #img-grid picture {
@@ -278,18 +278,33 @@ header p {
 /* DESTINATION */
 #about {
   padding: 20px;
+  background-color: var(--blue);
+  width: 85%;
 }
 
 #about div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  justify-content: center;
   gap: 1rem;
-  width: 85%;
+  width: 75%;
+}
+
+#about section {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
 }
 
 
 /* CONTACT */
+.form-required {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
 .required {
   color: var(--purple);
 }
@@ -297,15 +312,87 @@ header p {
 #contact {
   display: flex;
   flex-direction: column;
-  width: 90%;
 }
 
-form {
+/* form {
   display: flex;
   flex-direction: column;
 }
 
-#names input {
-  border: 2px var(--purple);
-  padding: 20px;
+#names {
+  display: flex;
+  flex-direction: column;
 }
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+} */
+
+
+form{
+	display: block;
+	width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+input, label, fieldset{
+	display: block;
+}
+
+/*
+.required{
+  display: inline-block;
+  color: #DE0B63;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+label{
+	padding-left: 0.5em;
+	margin: 0.75em 0 0.25em 0;
+}
+
+input{
+	font-size: 1em;
+	padding: 0.25em 0.5em;
+	border: 1px solid #222;
+	height: 1.5em;
+}
+
+fieldset{
+	border: 1px solid #222;
+	padding: 0.5em 0 1em 0.5em;
+	margin: 0.75em 0 0.25em 0;
+	width: 98%;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr 3fr;
+}
+
+input[type=submit]{
+	padding: 0.75em;
+	width: 35%;
+	height: auto;
+	margin-left: 67%;
+	color: #fff;
+	background-color: #222;
+	border: none;
+	font-family: serif;
+}
+
+textarea{
+	width: 100%;
+	height: 5em;
+	margin-bottom: 1em;
+}
+
+input:focus, textarea:focus{
+	border-color: blue;
+	box-shadow: 0 0 0 3px rgba(34, 34, 34, 0.3);
+	border-radius: 4px;
+}
+
+input:error, textarea:error{
+	border-color: #DE0B63;
+} */
