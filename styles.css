@@ -125,10 +125,12 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  background: linear-gradient(to bottom, var(--teal), var(--white));
 }
 
 #menu-toggle {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   position: relative;
   right: 10px;
@@ -136,6 +138,19 @@ header {
   width: 100%;
   align-items: right;
   margin-bottom: 10px; 
+}
+
+nav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: var(--blue);
+  color: var(--black);
 }
 
 #logo {
@@ -175,7 +190,7 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
+nav a:hover {
   background-color: var(--dark-gray);
 }
 
@@ -214,6 +229,7 @@ ul li a:hover {
 #img-grid img, #img-grid picture {
   width: 100%;
   height: auto;
+  padding-bottom: 10px;
 }
 
 
@@ -430,6 +446,33 @@ input[type=submit] {
 
 /* MEDIUM SCREEN SIZE */
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
+  /* HEADER & NAV */
+  nav label {
+    display: none;
+  }
+  
+  ul {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  nav {
+    position: relative;
+    top: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    background-color: var(--white);
+  }
+
+  nav a:hover {
+    background-color: var(--yellow);
+  }
+  
+  
   /* MAJORCA */
   #intro div {
     display: grid;
@@ -471,6 +514,10 @@ input[type=submit] {
 
 
   /* ABOUT DESTINATION */
+  #about {
+    padding-bottom: 10px;
+  }
+
   #about div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -486,15 +533,129 @@ input[type=submit] {
   }
 
   input[type=submit] {
-    align-items: right;
-    width: 50px;
+    position: relative;
+    left: 350px;
+    bottom: 10px;
+    width: 100px;
   }
 }
 
 
 /* LARGE SCREEN SIZE */
 @media only screen and (min-width: 1024px) {
+  header {
+    display: block;
+  }
+
+  header h1, header p {
+    position: relative;
+    left: 200px;
+    top: -80px;
+  }
+
+  nav label {
+    display: none;
+  }
   
+  ul {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  nav {
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    background-color: var(--white);
+  }
+
+  nav a:hover {
+    background-color: var(--yellow);
+  }
+
+  /* MAJORCA */
+  #intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #intro h2 {
+    grid-column: 1 / 1;
+    align-content: baseline;
+  }
+
+  #intro p {
+    grid-column: 1 / 1;
+  }
+
+  #img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #intro img:first-of-type {
+    grid-column: 1 / 1;
+  }
+
+  #intro img:nth-of-type(2) {
+    grid-column: 2 / 2;
+  }
+
+  #intro picture {
+    grid-column: span 2;
+    grid-row: 2;
+  }
+
+  /* PLAN YOUR TRIP */
+  #plan div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  /* TESTIMONIALS */
+  #testimonials div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  /* DESTINATIONS */
+  #about div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  /* CONTACT */
+  #contact form {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .radio-input {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 20px; 
+    height: 20px; 
+  } 
+  
+  #contact fieldset label {
+    display: flex;
+    flex-direction: row;
+  }
+
+
 }
 
 
